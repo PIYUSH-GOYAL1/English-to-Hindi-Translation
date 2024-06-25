@@ -11,9 +11,8 @@ from langchain_community.vectorstores import FAISS
 
 load_dotenv()
 
-
-llm = ChatGoogleGenerativeAI(model="gemini-pro" , google_api_key = os.getenv("GOOGLE_API_KEY")
-)
+os.environ['GOOGLE_API_KEY'] = os.getenv('GOOGLE_API_KEY')
+llm = ChatGoogleGenerativeAI(model="gemini-pro" , google_api_key = os.getenv("GOOGLE_API_KEY"))
 
 # loader = CSVLoader(file_path="updated_data.csv" , source_column = "english")
 # data = loader.load()
