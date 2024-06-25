@@ -8,4 +8,5 @@ protobuf
 langchain_community
 langchain_huggingface
 langchain-google-genai
-langchain_helper
+# langchain_helper
+# langchain_google_genai
